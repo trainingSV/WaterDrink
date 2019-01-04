@@ -11,13 +11,13 @@ import UIKit
 public typealias Identifier = String
 open class CVCalendarContentViewController: UIViewController {
     // MARK: - Constants
-    open let previous = "Previous"
-    open let presented = "Presented"
-    open let following = "Following"
+    public let previous = "Previous"
+    public let presented = "Presented"
+    public let following = "Following"
 
     // MARK: - Public Properties
-    open unowned let calendarView: CalendarView
-    open let scrollView: UIScrollView
+    public unowned let calendarView: CalendarView
+    public let scrollView: UIScrollView
 
     open var presentedMonthView: MonthView
 
@@ -34,7 +34,7 @@ open class CVCalendarContentViewController: UIViewController {
     open var presentationEnabled = true
     open var lastContentOffset: CGFloat = 0
     open var direction: CVScrollDirection = .none
-  
+
     open var toggleDateAnimationDuration: Double {
         return calendarView.delegate?.toggleDateAnimationDuration?() ?? 0.8
     }
@@ -42,7 +42,7 @@ open class CVCalendarContentViewController: UIViewController {
     public init(calendarView: CalendarView, frame: CGRect) {
         self.calendarView = calendarView
         scrollView = UIScrollView(frame: frame)
-        presentedMonthView = MonthView(calendarView: calendarView, date: Foundation.Date())
+        presentedMonthView = MonthView(calendarView: calendarView, date: calendarView.presentedDate?.convertedDate() ?? Foundation.Date())
         presentedMonthView.updateAppearance(frame)
 
         super.init(nibName: nil, bundle: nil)
@@ -85,6 +85,7 @@ extension CVCalendarContentViewController {
                 dayView.preliminarySetup()
                 dayView.supplementarySetup()
                 dayView.topMarkerSetup()
+                dayView.interactionSetup()
             }
         }
     }
@@ -224,12 +225,12 @@ extension CVCalendarContentViewController {
 
 
             for constraintIn in calendarView.constraints where
-                constraintIn.firstAttribute == NSLayoutAttribute.height {
+                constraintIn.firstAttribute == NSLayoutConstraint.Attribute.height {
                     constraintIn.constant = height
 
                     if animated {
                         UIView.animate(withDuration: 0.2, delay: 0,
-                                                   options: UIViewAnimationOptions.curveLinear,
+                                                   options: UIView.AnimationOptions.curveLinear,
                                                    animations: { [weak self] in
                             self?.layoutViews(viewsToLayout, toHeight: height)
                         }) { [weak self] _ in

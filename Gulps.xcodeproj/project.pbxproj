@@ -559,7 +559,6 @@
 				654764B11AF267D100C68C2A /* Frameworks */,
 				654764B21AF267D100C68C2A /* Resources */,
 				69F087CA9215AF692CD9E9F4 /* [CP] Embed Pods Frameworks */,
-				2A630B3392596839B5F9534D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -583,7 +582,6 @@
 				65AADD131AFBAD7B0039EE4C /* Embed Frameworks */,
 				653039851BDF6D8B00263D77 /* Embed Watch Content */,
 				8F040251DC4DA7A3FE2612B1 /* [CP] Embed Pods Frameworks */,
-				B85C1218C23E3CF27C21A7C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -604,7 +602,6 @@
 				65F44C401AF24B770093A3E9 /* Sources */,
 				65F44C411AF24B770093A3E9 /* Frameworks */,
 				65F44C421AF24B770093A3E9 /* Resources */,
-				743B96E775AA283E843B807F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -791,21 +788,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A630B3392596839B5F9534D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GulpsTests/Pods-GulpsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6933A05350F7D8F44F7B5238 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -845,6 +827,7 @@
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -868,21 +851,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GulpsTests/Pods-GulpsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		743B96E775AA283E843B807F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GulpsToday/Pods-GulpsToday-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8F040251DC4DA7A3FE2612B1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -898,7 +866,7 @@
 				"${BUILT_PRODUCTS_DIR}/CVCalendar/CVCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${PODS_ROOT}/Reveal-SDK/RevealServer-13/iOS/RevealServer.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-20/iOS/RevealServer.framework",
 				"${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
@@ -955,21 +923,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B85C1218C23E3CF27C21A7C7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gulps/Pods-Gulps-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

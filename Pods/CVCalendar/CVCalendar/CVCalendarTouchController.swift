@@ -57,8 +57,21 @@ private extension CVCalendarTouchController {
     func receiveTouchOnDayView(_ dayView: CVCalendarDayView,
                                withSelectionType selectionType: CVSelectionType) {
         if let calendarView = dayView.weekView.monthView.calendarView {
+            let calendar = calendarView.delegate?.calendar?() ?? Calendar.current
             switch selectionType {
             case .single:
+                if let convertedDate = dayView.date.convertedDate(calendar: calendar),
+                    let earliestDate = calendarView.delegate?.earliestSelectableDate?(),
+                    earliestDate.compare(convertedDate) == .orderedDescending {
+                    return
+                }
+
+                if let convertedDate = dayView.date.convertedDate(calendar: calendar),
+                    let latestDate = calendarView.delegate?.latestSelectableDate?(),
+                    latestDate.compare(convertedDate) == .orderedAscending {
+                    return
+                }
+
                 if calendarView.shouldSelectRange {
                     coordinator.performDayViewRangeSelection(dayView)
                 } else {

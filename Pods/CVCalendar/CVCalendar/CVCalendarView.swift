@@ -355,9 +355,17 @@ extension CVCalendarView {
 
     public func changeMode(_ mode: CalendarMode, completion: @escaping () -> () = {}) {
         let calendar = self.delegate?.calendar?() ?? Calendar.current
-        guard let selectedDate = coordinator.selectedDayView?.date.convertedDate(calendar: calendar) ,
-            calendarMode != mode else {
-                return
+        let shouldSelectRange = self.delegate?.shouldSelectRange?() ?? false
+        
+        guard calendarMode != mode else {
+            return
+        }
+        
+        var selectedDate:Date?
+        if !shouldSelectRange {
+            selectedDate = coordinator.selectedDayView?.date.convertedDate(calendar: calendar)
+        } else {
+            selectedDate = coordinator.selectedStartDayView?.date.convertedDate(calendar: calendar)
         }
 
         calendarMode = mode
@@ -367,19 +375,19 @@ extension CVCalendarView {
         case .weekView:
             contentController.updateHeight(dayViewSize!.height, animated: true)
             newController = WeekContentViewController(calendarView: self, frame: bounds,
-                                                      presentedDate: selectedDate)
+                                                      presentedDate: selectedDate ?? Date())
         case .monthView:
             contentController.updateHeight(
                 contentController.presentedMonthView.potentialSize.height, animated: true)
             newController = MonthContentViewController(calendarView: self, frame: bounds,
-                                                       presentedDate: selectedDate)
+                                                       presentedDate: selectedDate ?? Date())
         }
 
         newController.updateFrames(bounds)
         newController.scrollView.alpha = 0
         addSubview(newController.scrollView)
 
-        UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions(), animations: { [weak self] in
+        UIView.animate(withDuration: 0.5, delay: 0, options: UIView.AnimationOptions(), animations: { [weak self] in
             self?.contentController.scrollView.alpha = 0
             newController.scrollView.alpha = 1
         }) { [weak self] _ in
