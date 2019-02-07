@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Avenir.ttc">
-            <string>Avenir-Book</string>
-        </array>
         <array key="KaushanScript.ttf">
             <string>KaushanScript-Regular</string>
         </array>
@@ -57,7 +52,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSl-zs-C7Z" userLabel="Small Button">
-                                <rect key="frame" x="153" y="454" width="70" height="70"/>
+                                <rect key="frame" x="152.5" y="454" width="70" height="70"/>
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.49019607840000001" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="3RS-1m-Fjb"/>
@@ -76,7 +71,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5a-2l-qvB" userLabel="Large Button">
-                                <rect key="frame" x="153" y="454" width="70" height="70"/>
+                                <rect key="frame" x="152.5" y="454" width="70" height="70"/>
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.49019607840000001" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Njd-jj-cNp"/>
@@ -95,7 +90,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW6-sm-t8g" userLabel="Add Button">
-                                <rect key="frame" x="153" y="454" width="70" height="70"/>
+                                <rect key="frame" x="152.5" y="454" width="70" height="70"/>
                                 <color key="backgroundColor" red="0.2196078431372549" green="0.49019607843137253" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Yl3-mS-wuG"/>
@@ -183,7 +178,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <customObject id="YJs-c5-Aop" customClass="EntryHandler" customModule="Gulps"/>
             </objects>
-            <point key="canvasLocation" x="833" y="-656"/>
+            <point key="canvasLocation" x="1332" y="-590.55472263868069"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="SYy-UA-vxC">
@@ -248,7 +243,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JK4-jm-Ngh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688" y="-656"/>
+            <point key="canvasLocation" x="2700.8000000000002" y="-590.10494752623697"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="8V4-Ch-Z4J">
@@ -340,7 +335,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRM-gP-bOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2124" y="-976"/>
+            <point key="canvasLocation" x="3398.4000000000001" y="-877.9610194902549"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="fAg-H6-Cxt">
@@ -428,7 +423,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Mh-cU-OP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2124" y="-321"/>
+            <point key="canvasLocation" x="3398.4000000000001" y="-288.75562218890559"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -450,7 +445,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-34" y="0.0"/>
+            <point key="canvasLocation" x="-54.399999999999999" y="0.0"/>
         </scene>
         <!--Drink-->
         <scene sceneID="yhS-QJ-Xyb">
@@ -459,6 +454,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                     <tabBarItem key="tabBarItem" title="Drink" image="drink-icon" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="U4a-LJ-b69">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.21960784310000001" green="0.49019607840000001" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -469,7 +465,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6F6-ZI-off" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="-656"/>
+            <point key="canvasLocation" x="640" y="-590.10494752623697"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="X3R-mt-gca">
@@ -622,7 +618,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLz-Ir-9US" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832.5" y="-0.5"/>
+            <point key="canvasLocation" x="1332" y="-0.44977511244377816"/>
         </scene>
         <!--My progress-->
         <scene sceneID="Yb4-kZ-eAj">
@@ -631,6 +627,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                     <tabBarItem key="tabBarItem" title="My progress" image="calendar-icon" id="1AV-yg-enX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Oty-Lr-Na6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.17367905378341675" green="0.40215393900871277" blue="0.76835298538208008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -641,7 +638,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6iZ-BW-ALn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="0.0"/>
+            <point key="canvasLocation" x="640" y="0.0"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="f6s-sH-ozk">
@@ -696,7 +693,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0,2" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HpM-IE-rg0">
-                                                    <rect key="frame" x="245" y="0.0" width="90" height="43"/>
+                                                    <rect key="frame" x="245" y="0.0" width="90" height="43.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="90" id="2Oj-6B-XzV"/>
                                                     </constraints>
@@ -708,7 +705,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                                     </connections>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oz" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbd-CS-kU7">
-                                                    <rect key="frame" x="341" y="13" width="19" height="17"/>
+                                                    <rect key="frame" x="341" y="13.5" width="19" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -733,7 +730,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0,5" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SBF-ug-rBd">
-                                                    <rect key="frame" x="245" y="0.0" width="90" height="43"/>
+                                                    <rect key="frame" x="245" y="0.0" width="90" height="43.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="90" id="QyB-HA-EVf"/>
                                                     </constraints>
@@ -751,7 +748,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oz" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVh-z0-hYc">
-                                                    <rect key="frame" x="341" y="13" width="19" height="17"/>
+                                                    <rect key="frame" x="341" y="13.5" width="19" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -776,7 +773,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Heo-vz-8M3">
-                                                    <rect key="frame" x="245" y="0.0" width="90" height="43"/>
+                                                    <rect key="frame" x="245" y="0.0" width="90" height="43.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="90" id="PIP-Vv-8Xt"/>
                                                     </constraints>
@@ -794,7 +791,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oz" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DT8-cB-ShB">
-                                                    <rect key="frame" x="341" y="13" width="19" height="17"/>
+                                                    <rect key="frame" x="341" y="13.5" width="19" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -829,7 +826,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mua-Mo-rXC">
-                                                    <rect key="frame" x="318" y="6" width="51" height="31"/>
+                                                    <rect key="frame" x="318" y="6" width="51" height="31.5"/>
                                                     <connections>
                                                         <action selector="reminderAction:" destination="t9K-A9-XHF" eventType="valueChanged" id="zyb-e2-1zL"/>
                                                     </connections>
@@ -935,7 +932,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fU5-mD-m8k">
-                                                    <rect key="frame" x="318" y="6" width="51" height="31"/>
+                                                    <rect key="frame" x="318" y="6" width="51" height="31.5"/>
                                                     <connections>
                                                         <action selector="healthAction:" destination="t9K-A9-XHF" eventType="valueChanged" id="QZV-Zs-eiK"/>
                                                     </connections>
@@ -977,7 +974,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gao-yG-C7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="833" y="718"/>
+            <point key="canvasLocation" x="1332.8" y="645.87706146926541"/>
         </scene>
         <!--Preferences-->
         <scene sceneID="N6A-EL-ShQ">
@@ -986,6 +983,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                     <tabBarItem key="tabBarItem" title="Preferences" image="settings-icon" id="BBe-Kb-DPg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="zxx-GC-h7k">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -995,7 +993,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QMS-ui-HT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="718"/>
+            <point key="canvasLocation" x="640" y="645.87706146926541"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="icc-oL-27X">
@@ -1012,7 +1010,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qyj-1I-346" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1255" y="-656"/>
+            <point key="canvasLocation" x="2008" y="-590.10494752623697"/>
         </scene>
     </scenes>
     <resources>

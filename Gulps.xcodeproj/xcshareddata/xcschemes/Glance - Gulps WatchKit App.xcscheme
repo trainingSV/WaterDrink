@@ -54,7 +54,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -64,6 +63,16 @@
                BlueprintIdentifier = "655DF1011BAC19EB00431D0E"
                BuildableName = "GulpsModelTests.xctest"
                BlueprintName = "GulpsModelTests"
+               ReferencedContainer = "container:Gulps.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4E775EAB21E778F900F93710"
+               BuildableName = "GulpsUITests.xctest"
+               BlueprintName = "GulpsUITests"
                ReferencedContainer = "container:Gulps.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -84,7 +93,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
